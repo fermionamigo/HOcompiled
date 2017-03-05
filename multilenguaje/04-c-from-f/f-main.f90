@@ -6,11 +6,10 @@ program testsum
 
   interface
      integer(c_int) function sum_abs(inp, num) bind(c)
-	use iso_c_binding
-	implicit none
-	!integer (c_int),intent(in)::inp
-        type (c_ptr), value::inp
-	integer(c_int),value::num
+	    use iso_c_binding
+	    implicit none
+	    type (c_ptr), value::inp
+	    integer(c_int),value::num
      end function sum_abs
   end interface
     
