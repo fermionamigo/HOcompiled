@@ -1,0 +1,1 @@
+Lo que hicimos aca fue explicitar en el header file que la funcion es externa a C. En archivo .cpp donde esta la funcion que usamos en el programa principal creamos un namespace y explicitamos que la funcion va a ser usada en C con _external \"C\"_
